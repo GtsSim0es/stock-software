@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque de Joias</title>
+</head>
+<body>
+    <header>
+    
+    <div class="tituloE">
+        <a href="/"><h1 >Estoque de Joias</h1></a>
+    </div>
+
+    <div class="sair">
+        <a href="/sair"><h4>Sair</h4></a>
+    </div>
+
+<div class="searchDiv">
+    <form action="/buscar" class="search">
+        <input id="searchBtn" name="term" type="search" placeholder="Buscar">
+        <input type="submit" class="busc" value="Buscar">
+    </form>
+</div>
+
+
+ 
+        
+        <div class="add">
+            <button class="remBtn" id="btnRem" type="button">Remover Produto</button>
+            <button id="btnMostrarEsconder" type="button">Adicionar Produto</button> 
+        </div>
+    
+        <br>
+
+        <div id="divConteudo" class="adicionarP">
+
+            <form action="/add" method="POST" enctype="multipart/form-data">
+               
+               
+			    <input type="file" name="imagem" accept="image/png, image/jpeg" id="imagem" onchange="previewImagem()"><br><br>
+			    <label class="lbImg" for="imagem"><img style="width: 30vh; height: 30vh;"><br><br></label>
+			
+			
+                <div class="adddiv"> 
+                    Nome: <input name="nome" id="nome" type="text">
+                    Grama: <input name="grama" id="grama" type="number">
+                    Codigo: <input name="codigo" id="codigo" type="number">
+                    Quilates: <input name="quilates" id="quilates" type="number">
+                    Tipo: <input name="tipo" id="tipo" type="text">
+                </div>
+
+                <div class="radioB">
+                    <input type="radio" id="touch1" name="qualificacao" value="anel">
+                    <label for="touch1">Anel</label>
+                    <input type="radio" id="touch2" name="qualificacao" value="corrente">
+                    <label for="touch2">Corrente</label>
+                    <input type="radio" id="touch3" name="qualificacao" value="brinco">
+                    <label for="touch3">Brinco</label>
+                    <input type="radio" id="touch4" name="qualificacao" value="pingente">
+                    <label for="touch4">Pingente</label>
+                </div>
+
+                <span class="bntcriar"><input type="submit" id="send" value="Adicionar"></span>
+              
+                
+            </form>
+        </div>
+    </header>
+
+    <br>
+    <div class="produtos">
+        <span class="aneis">
+            <a href="/aneis"><button type="button">Anéis</button></a>
+        </span>
+
+        <span class="correntes">
+            <a href="/correntes"><button type="button">Corrente</button></a>
+        </span>
+
+        <span class="brincos">
+            <a href="/brincos"><button type="button">Brincos</button></a>
+        </span>
+
+        <span class="pingentes">
+            <a href="/pingentes"><button type="button">Pingente</button></a>
+        </span  >
+    </div>
+
+    {{{body}}}
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

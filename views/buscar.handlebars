@@ -1,0 +1,20 @@
+{{#each buscar}}
+    <table>
+        <tr>
+            <th class="imgdiv">Imagens</th>
+            <th>{{qualificacao}}</th>
+            <th>Grama</th>
+            <th>Codigo</th>
+            <th>Quilates</th>
+            <th>Tipo de pedra</th>
+        </tr>
+        <tr>
+            <td><img src="/images/{{imagem}}"></td>
+            <td>{{nome}}</td>
+            <td>{{grama}}</td>
+            <td>{{codigo}}</td>
+            <td>{{quilates}}</td>
+            <td>{{tipo}}<div class="divRem"><a href="/deletar/{{id}}"><button>Remover</button></a></div></td>
+        </tr>
+    </table>
+{{/each}}

@@ -1,0 +1,28 @@
+<div id="divConteudo" class="adicionarP">
+
+            <form action="/add" method="POST" enctype="multipart/form-data">
+                <span>
+                    <input type="file" name="imagem" id="imagem"  accept="image/png, image/jpeg" onchange="previewImage()" multiple /> 
+                    <img style="width: 150px; height: 150px;">
+                    <label for="imagem"><br><br><br><br>123</label>
+                </span>
+                <div class="adddiv"> Nome: <input name="nome" id="nome" type="text">
+                <div class="adddiv">Grama: <input name="grama" id="grama" type="number"></div>
+                <div class="adddiv">Codigo: <input name="codigo" id="codigo" type="number"></div>
+                <div class="adddiv">Quilates: <input name="quilates" id="quilates" type="number"></div>
+                <div class="adddiv">Tipo: <input name="tipo" id="tipo" type="text"></div>
+
+                <input type="radio" name="qualificacao" value="anel">Anel<br>
+                <input type="radio" name="qualificacao" value="corrente">Corrente<br>
+                <input type="radio" name="qualificacao" value="brinco">Brinco<br>
+                <input type="radio" name="qualificacao" value="pingente">Pingente<br>
+
+                
+                <span class="bntcriar"><input type="submit" id="send" value="Adicionar" ></span>
+                
+            </form>
+        </div>
+
+
+
+        conectar DB com excel: https://www.guiadoexcel.com.br/conectar-mysql-no-excel-como-conectar-o-banco-de-dados-mysql/

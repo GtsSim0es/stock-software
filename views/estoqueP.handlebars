@@ -1,0 +1,29 @@
+<div id="divPingente">
+        <table>
+            <tr>
+                <th class="imgdiv">Imagens</th>
+                <th>Pingentes</th>
+                <th>Grama</th>
+                <th>Codigo</th>
+                <th>Quilates</th>
+                <th>Tipo de pedra</th>
+            </tr>
+
+            {{#each estoquepingente}}
+        <tr>
+            <td><img src="/images/{{imagem}}"></td>
+            <td>{{nome}}</td>
+            <td>{{grama}}</td>
+            <td>{{codigo}}</td>
+            <td>{{quilates}}</td>
+            <td>{{tipo}}<div class="divRem"><a href="/deletar/{{id}}"><button>Remover</button></a></div></td>
+        </tr>
+        {{/each}}
+        </table>
+    </div>
+
+    
+   
+    
+
+
